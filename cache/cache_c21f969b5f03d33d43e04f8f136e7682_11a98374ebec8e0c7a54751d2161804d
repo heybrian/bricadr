@@ -1,0 +1,252 @@
+                      2970747307<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Complete List of India ADR stocks | BRICADR.com</title>
+<meta name="description" content="Comprehensive list of all BRIC stocks traded on American exchanges &mdash; Invest in China, India, Brazil and Russia.">
+<meta name="keywords" content="BRIC, investing, Brazil, Russia, India, China, ADR, invest in emerging markets">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/blueprint/screen.css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/print.css" media="print">
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" media="screen, projection">
+<link rel="stylesheet" href="css/bricadr.css" media="screen, projection">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WQ2LMV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WQ2LMV');</script> 
+<!-- End Google Tag Manager -->
+<div class="container">
+  <header>
+    <p><a href="/">China</a> | <a href="../india_adr.php">India</a> | <a href="../brazil_adr.php">Brazil</a> | <a href="../russia_adr.php">Russia</a> | <a href="javascript: void(0);" onclick="document.getElementById('moreCountries').style.display = 'block';">More countries...</a> <span style="float: right;"><a class="bricBox" href="#bric_box">What&rsquo;s a BRIC?</a> | <a class="bricBox" href="#bric_box">What&rsquo;s an ADR?</a> |
+  <script src="../js/email_contact.js" type="text/javascript"></script>
+  </span></p>
+<div id="moreCountries">
+  <p>>>
+    <!--<a href="central_eastern_europe_adr.php">Central &amp; East Europe</a> | <a href="east_asia_adr.php">East Asia</a> | -->
+    <a href="africa_middle_east_adr.php">Africa / Middle East</a> | <a href="chile_adr.php">Chile</a> | <a href="mexico_adr.php">Mexico</a> | <a href="thailand_adr.php">Thailand</a> | <a href="southeast_asia_adr.php">Southeast Asia</a> <a href="javascript: void(0);" onclick="document.getElementById('moreCountries').style.display = 'none';"><img src="images/close_window.png" alt="Close window" width="13" height="13" style="position: relative; top: 2px;" /></a></p>
+</div>
+<h2>bricadr.com</h2>
+    <h1><strong>India:</strong> Sortable list of all stocks and funds</h1>
+    <h4>A list of all Indian companies traded on U.S. exchanges, sortable by price, P/E, name and industry.<br>
+      Found a new ADR? <a href="mailto:heybej@gmail.com">Add it here</a>.</h4>
+  </header>
+  <hr>
+  <div class="column span-3"> 
+    <script type="text/javascript" src="js/google.vert.ad.js"></script> 
+    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script> 
+  </div><div class="mobile-ad"> 
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+  <!-- bricadr-responsive --> 
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4859703351303905"
+     data-ad-slot="2984187151"
+     data-ad-format="auto"></ins> 
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> 
+</div>
+  <div class="column span-18">
+    <h4><strong>Sortable Table &mdash;</strong> Click column header to sort; hold &lsquo;shift&rsquo; key to subsort second column.</h4>
+    <table id="bricAdr" class="tablesorter">
+      <thead>
+        <tr>
+          <th>ADR Name</th>
+          <th>Ticker</th>
+          <th>Price</th>
+          <th>Change</th>
+          <th style="text-align:center">%</th>
+          <th>P/E</th>
+          <th>MarCap</th>
+          <th>Yield</th>
+          <th>Sector</th>
+          <th>Industry</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bombay Stock Exchange Index</td>
+          <td><a href="http://finance.yahoo.com/q?s=^BSESN" target="_blank">^BSESN</a></td>
+          <td></td>          <td>Index</td>
+          <td><a href="http://finance.yahoo.com/echarts?s=MINDX+Interactive#chart3:symbol=mindx;range=2y;compare=scif+indy+iff+pin+epi+inp+ifn;indicator=sma%2850,200%29+bollinger+volume;charttype=line;crosshair=on;ohlcvalues=0;logscale=off;source=undefined" target="_blank">Compare</a></td>
+        </tr>
+        <tr>
+          <td>Dr. Reddy&rsquo;s Laboratories</td>
+          <td><a href="http://finance.yahoo.com/q?s=RDY" target="_blank">RDY</a></td>
+          <td></td>          <td>Health</td>
+          <td>Pharma</td>
+        </tr>
+        <tr>
+          <td>HDFC Bank</td>
+          <td><a href="http://finance.yahoo.com/q?s=HDB" target="_blank">HDB</a></td>
+          <td></td>          <td>Finance</td>
+          <td>Bank</td>
+        </tr>
+        <tr>
+          <td>ICICI Bank</td>
+          <td><a href="http://finance.yahoo.com/q?s=IBN" target="_blank">IBN</a></td>
+          <td></td>          <td>Finance</td>
+          <td>Bank</td>
+        </tr>
+        <tr>
+          <td>iGATE Corporation</td>
+          <td><a href="http://finance.yahoo.com/q?s=IGTE" target="_blank">IGTE</a></td>
+          <td></td>          <td>Technology</td>
+          <td>Consulting</td>
+        </tr>
+        <tr>
+          <td>India Fund</td>
+          <td><a href="http://finance.yahoo.com/q?s=IFN" target="_blank">IFN</a></td>
+          <td></td>          <td>Fund</td>
+          <td>CEF</td>
+        </tr>
+        <tr>
+          <td>Infosys Technolo</td>
+          <td><a href="http://finance.yahoo.com/q?s=INFY" target="_blank">INFY</a></td>
+          <td></td>          <td>Technology</td>
+          <td>Consulting</td>
+        </tr>
+        <tr>
+          <td>iPath MSCI India Index</td>
+          <td><a href="http://finance.yahoo.com/q?s=INP" target="_blank">INP</a></td>
+          <td></td>          <td>Fund</td>
+          <td>ETN</td>
+        </tr>
+        <tr>
+          <td>iShares S&amp;P India Nifty 50</td>
+          <td><a href="http://finance.yahoo.com/q?s=INDY" target="_blank">INDY</a></td>
+          <td></td>          <td>Fund</td>
+          <td>ETF</td>
+        </tr>
+        <tr>
+          <td>Mahanagar Telephone Nigam</td>
+          <td><a href="http://finance.yahoo.com/q?s=MTENY" target="_blank">MTENY</a></td>
+          <td></td>          <td>Technology</td>
+          <td>Telecom</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.makemytrip.com/" target="_blank">MakeMyTrip Limited</a></td>
+          <td><a href="http://finance.yahoo.com/q?s=MMYT" target="_blank">MMYT</a></td>
+          <td></td>          <td>Travel</td>
+          <td>Ticketing</td>
+        </tr>
+        <tr>
+          <td>Market Vectors India Small-Cap</td>
+          <td><a href="http://finance.yahoo.com/q?s=SCIF" target="_blank">SCIF</a></td>
+          <td></td>          <td>Fund</td>
+          <td> ETF</td>
+        </tr>
+        <tr>
+          <td>Matthews India Investor</td>
+          <td><a href="http://finance.yahoo.com/q?s=MINDX" target="_blank">MINDX</a></td>
+          <td></td>          <td>Fund</td>
+          <td>Mutual</td>
+        </tr>
+        <tr>
+          <td>MS India Investment Fund</td>
+          <td><a href="http://finance.yahoo.com/q?s=IIF" target="_blank">IIF</a></td>
+          <td></td>          <td>Fund</td>
+          <td>CEF</td>
+        </tr>
+        <tr>
+          <td>PowerShares India</td>
+          <td><a href="http://finance.yahoo.com/q?s=PIN" target="_blank">PIN</a></td>
+          <td></td>          <td>Fund</td>
+          <td>ETF</td>
+        </tr>
+        <tr>
+          <td>Rediff.com India</td>
+          <td><a href="http://finance.yahoo.com/q?s=REDF" target="_blank">REDF</a></td>
+          <td></td>          <td>Technology</td>
+          <td>Consulting</td>
+        </tr>
+        <tr>
+          <td>Sify Technologies</td>
+          <td><a href="http://finance.yahoo.com/q?s=SIFY" target="_blank">SIFY</a></td>
+          <td></td>          <td>Technology</td>
+          <td>Consulting</td>
+        </tr>
+        <tr>
+          <td>Tata Motors Ltd.</td>
+          <td><a href="http://finance.yahoo.com/q?s=TTM" target="_blank">TTM</a></td>
+          <td></td>          <td>Auto</td>
+          <td>Production</td>
+        </tr>
+        <tr>
+          <td>Vedanta Resources</td>
+          <td><a href="http://finance.yahoo.com/q?s=VDNRF" target="_blank">VDNRF</a></td>
+          <td></td>          <td>Mining</td>
+          <td>Copper</td>
+        </tr>
+        <tr>
+          <td>Wipro</td>
+          <td><a href="http://finance.yahoo.com/q?s=WIT" target="_blank">WIT</a></td>
+          <td></td>          <td>Technology</td>
+          <td>Consulting</td>
+        </tr>
+        <tr>
+          <td>Wisdomtree Trust</td>
+          <td><a href="http://finance.yahoo.com/q?s=EPI" target="_blank">EPI</a></td>
+          <td></td>          <td>Fund</td>
+          <td>ETF</td>
+        </tr>
+        <tr>
+          <td>WNS (Holdings)</td>
+          <td><a href="http://finance.yahoo.com/q?s=WNS" target="_blank">WNS</a></td>
+          <td></td>          <td>Technology</td>
+          <td>Consulting</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--<p>&uarr;= top brand (rank) | <span class="orange">*</span>= recent IPO, non-reverse-merger</p>--> 
+  </div><div class="mobile-ad"> 
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+  <!-- bricadr-responsive --> 
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4859703351303905"
+     data-ad-slot="2984187151"
+     data-ad-format="auto"></ins> 
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> 
+</div>
+  <div class="column span-3 last"><script type="text/javascript" src="js/google.vert.ad.js"></script> 
+    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script> 
+  </div>
+  <hr>
+  <footer>
+    <p> 
+      <script type="text/javascript">
+		var oRows = document.getElementById('bricAdr').getElementsByTagName('tr');
+		var iRowCount = oRows.length - 1;
+		document.write(iRowCount + ' Indian ADRs on this page.');
+	  </script>
+      <br />
+Financial Market Data powered by <a href="http://finance.yahoo.com/" target="_blank">Yahoo! Inc.</a> All rights reserved.<br />
+NYSE/AMEX/NASDAQ/OTC/other data delayed by two hours or more. Click ticker symbols for more current quote prices. <span style="float: right;"><a href="#">Back to top &#94;</a></span>
+</p>
+<h4>The information herein is provided by various sources including individual contributors not associated with the bricadr.com website and is not guaranteed by us and does not purport to be a complete or error-free statement or summary of the available data. As such, we do not warrant, endorse or guarantee the completeness, accuracy, integrity or timelines of the information. You must evaluate, and bear all risks associated with, the use of any information provided hereunder, including any reliance on the accuracy, completeness, safety or usefulness of such information. This information is not intended to be used as the primary basis of investment decisions. It should not be construed as financial or other advice or as an offer to sell or the solicitation of an offer to buy any security in any state where such an offer or solicitation would be illegal. Any information expressed herein on this date is subject to change without notice. Any opinions or assertions contained in this information do not represent the opinions or beliefs of the bricadr.com website or one or more of its employees, who may have a position in any of the securities discussed herein.</h4>
+  </footer>
+</div>
+<div style="display: none;">
+    <div id="bric_box" style="width:700px; height:500px; overflow:auto;">
+    <h2>What&rsquo;s a BRIC?</h2>
+    <p>BRIC (typically rendered as &ldquo;the BRICs&rdquo; or &ldquo;the BRIC countries&rdquo; or known as the &ldquo;Big Four&rdquo;) is a grouping acronym that refers to the countries of Brazil, Russia, India, and China that are deemed to all be at a similar stage of newly advanced economic development. The four countries, combined, currently account for more than a quarter of the world's land area and more than 40% of the world's population. Some economists believe the economic potential of Brazil, Russia, India, and China is such that they could become among the four most dominant economies by the year 2050.</p>
+    <p>The acronym was coined by Jim O&rsquo;Neill of Goldman Sachs in a 2001 paper entitled &ldquo;The World Needs Better Economic BRICs&rdquo;.</p>
+    <hr />
+    <h2>What&rsquo;s an ADR?</h2>
+    <p>ADR is an acronym that stands for American Depositary Receipt. An ADR represents ownership in the shares of a non-U.S. company that trades in U.S. financial markets. ADRs enable investors to buy foreign companies on United State exchanges (NYSE, NASDAQ) and in US dollars while paying the same fees as other US listed securities. Additionally, companies that list ADRs are subject to the same compliance and laws as other US companies. ADRs do contain risk and can be extremely volatile.</p>
+  </div>
+</div>
+<script src="js/jquery.document.ready.js" type="text/javascript"></script>
+</body>
+</html>

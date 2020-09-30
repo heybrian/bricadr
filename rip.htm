@@ -1,0 +1,675 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+<body>
+<tr>
+  <td>China Sky One Medical</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=CSKI" target="_blank">CSKI</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=CSKI&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Health</td>
+  <td>OTC</td>
+</tr>
+<tr>
+  <td>Hanwha SolarOne</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=HSOL" target="_blank">HSOL</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=HSOL&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Energy</td>
+  <td>Solar</td>
+</tr>
+<tr>
+  <td><a href="http://www.isoftstone.com/" target="_blank">iSoftStone</a></td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=ISS" target="_blank">ISS</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=ISS&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Technology</td>
+  <td>Consulting</td>
+</tr>
+<tr>
+  <td><a href="http://www.legaga.com.hk/html/index.php" target="_blank">Le Gaga</a></td>
+  <td><a href="http://finance.yahoo.com/q?s=GAGA" target="_blank">GAGA</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=GAGA&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Consumer</td>
+  <td>Vegetables</td>
+</tr>
+<tr>
+  <td>Lentuo</td>
+  <td><a href="http://finance.yahoo.com/q/pr?s=LAS" target="_blank">LAS</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=LAS&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Auto</td>
+  <td>Retail</td>
+</tr>
+<tr>
+  <td><a href="http://www.montage-tech.com/" target="_blank">Montage Technology</a>&nbsp;<span style="color: gold;">&lowast;</span></td>
+  <td><a href="http://finance.yahoo.com/q?s=CAF" target="_blank">MONT</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=MONT&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Technology</td>
+  <td>Semi-conductors</td>
+</tr>
+<tr>
+  <td><a href="http://www.rdamicro.com" target="_blank">RDA Microelectronics</a></td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=RDA" target="_blank">RDA</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=RDA&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Technology</td>
+  <td>Semi-conductors</td>
+</tr>
+<tr>
+  <td>Tianli Agritech</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=OINK" target="_blank">OINK</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=OINK&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Consumer</td>
+  <td>Pork bellies</td>
+</tr>
+<tr>
+  <td>WSP</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=WH" target="_blank">WH</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=WH&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Energy</td>
+  <td>Oil</td>
+</tr>
+<tr>
+  <td>Yongye</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=YONG" target="_blank">YONG</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=YONG&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Agribiz</td>
+  <td>Fertilizer</td>
+</tr>
+<tr>
+  <td>Charm Communications</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=CHRM" target="_blank">CHRM</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=CHRM&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Advertising</td>
+  <td>Agency</td>
+</tr>
+<tr>
+  <td>AutoNavi</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=AMAP" target="_blank">AMAP</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=AMAP&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Auto</td>
+  <td>Navigation</td>
+</tr>
+<tr>
+  <td>China Real Estate Information</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=CRIC" target="_blank">CRIC</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=CRIC&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Technology</td>
+  <td>Real Estate</td>
+</tr>
+<tr>
+  <td>China GrenTech</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=GRRF" target="_blank">GRRF</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=GRRF&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Technology</td>
+  <td>Wireless</td>
+</tr>
+<tr>
+  <td>China Shenghuo Pharmaceutical<span class="red">*</span></td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=KUN" target="_blank">KUN</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=KUN&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Health</td>
+  <td>OTC &amp; ginseng</td>
+</tr>
+<tr>
+  <td>Shanda Interactive Entertainment</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=SNDA" target="_blank">SNDA</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=SNDA&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Technology</td>
+  <td>Gaming</td>
+</tr>
+<tr>
+  <td><a href="3sbio.com" target="_blank">3SBIO</a></td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=SSRX" target="_blank">SSRX</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=SSRX&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Health</td>
+  <td>Biotech</td>
+</tr>
+<tr>
+  <td><a href="http://www.7daysinn.com/" target="_blank">7 Days Group Holdings</a></td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=SVN" target="_blank">SVN</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=SVN&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Travel</td>
+  <td>Hotels</td>
+</tr>
+<tr>
+  <td><a href="http://www.acquitygroup.com/" target="_blank">Acquity Group</a></td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=AQ" target="_blank">AQ</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=AQ&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Services</td>
+  <td>Business Development</td>
+</tr>
+<tr>
+  <td>AgFeed Industries</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=FEED" target="_blank">FEED</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=FEED&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Consumer</td>
+  <td>Farm products</td>
+</tr>
+<tr>
+  <td>American Dairy</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=ADY" target="_blank">ADY</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=ADY&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Consumer</td>
+  <td>Dairy</td>
+</tr>
+<tr>
+  <td><a href="http://www.camelotchina.com/" target="_blank">Camelot Information Systems</a></td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=CIS" target="_blank">CIS</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=CIS&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Technology</td>
+  <td>IT Consulting</td>
+</tr>
+<tr>
+  <td>China Natural Gas, Inc.</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=CHNG" target="_blank">CHNG</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=CHNG&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Energy</td>
+  <td>Nat gas</td>
+</tr>
+<tr>
+  <td>China Nuokang Bio-Pharma</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=NKBP" target="_blank">NKBP</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=NKBP&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Health</td>
+  <td>Biotech</td>
+</tr>
+<tr>
+  <td>China Shen Zhou Mining &amp; Resources</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=SHZ" target="_blank">SHZ</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=SHZ&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Mining</td>
+  <td>Flourite / copper</td>
+</tr>
+<tr>
+  <td>Focus Media Holding</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=FMCN" target="_blank">FMCN</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=FMCN&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Advertising</td>
+  <td>Displays</td>
+</tr>
+<tr>
+  <td>Fushi Copperweld</td>
+  <td><a href="http://finance.yahoo.com/q/pr?s=FSIN" target="_blank">FSIN</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=FSIN&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Industrial</td>
+  <td>Copper</td>
+</tr>
+<tr>
+  <td>Gushan Environmental Energy</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=GU" target="_blank">GU</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=GU&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Energy</td>
+  <td>Solar</td>
+</tr>
+<tr>
+  <td>LDK Solar</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=LDK" target="_blank">LDK</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=LDK&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Energy</td>
+  <td>Solar</td>
+</tr>
+<tr>
+  <td>Longwei Petroleum Investment</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=LPH" target="_blank">LPH</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=LPH&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Energy</td>
+  <td>Oil transport</td>
+</tr>
+<tr>
+  <td><a href="http://www.shangpharma.com/" target="_blank">ShangPharma Corporation</a></td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=SHP" target="_blank">SHP</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=SHP&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Health</td>
+  <td>Biotech</td>
+</tr>
+<tr>
+  <td>Simcere Pharmaceutical</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=SCR" target="_blank">SCR</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=SCR&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Health</td>
+  <td>Pharma</td>
+</tr>
+<tr>
+  <td>Suntech Power</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=STP" target="_blank">STP</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=STP&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Energy</td>
+  <td>Solar</td>
+</tr>
+<tr>
+  <td><a href="http://www.syswin.com/" target="_blank">Syswin Inc.</a></td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=SYSW" target="_blank">SYSW</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=SYSW&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Finance</td>
+  <td>Real Estate</td>
+</tr>
+<tr>
+  <td>Winner Medical Group</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=WWIN" target="_blank">WWIN</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=WWIN&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Health</td>
+  <td>Devices</td>
+</tr>
+<tr>
+  <td>Yucheng Technologies</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=YTEC" target="_blank">YTEC</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=YTEC&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Technology</td>
+  <td>Finance</td>
+</tr>
+<tr>
+  <td>Zhongpin</td>
+  <td><a href="http://finance.yahoo.com/q?d=t&amp;s=HOGS" target="_blank">HOGS</a></td>
+  <?php $curl=curl_init();
+			curl_setopt ($curl,CURLOPT_URL,"http://download.finance.yahoo.com/d/quotes.csv?s=HOGS&f=l1c1p2rj1y&e=.csv");
+			curl_setopt ($curl,CURLOPT_HEADER,0);
+			ob_start();
+			curl_exec ($curl);
+			curl_close ($curl);
+			$data=ob_get_clean();
+			$data=explode(",",$data);
+			$data=str_replace('"','',$data);
+			foreach ($data as $results)
+			echo "<td>$results</td>";
+			?>
+  <td>Consumer</td>
+  <td>Pork bellies</td>
+</tr>
+</body>
+</html>

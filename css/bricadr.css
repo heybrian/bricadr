@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body { background: url("../bric.jpg") no-repeat scroll 90% 10px; }
+@media only screen and (max-width: 480px) { body { background: url("../bric.jpg") scroll right 30px / 200px 149px no-repeat ; } }
+
+.container { width: 998px; }
+@media only screen and (max-width: 480px) { .container { width: initial; max-width: 998px; } }
+
+header { padding: 0 10px; width: 100%; }
+@media only screen and (max-width: 480px) { header p { font-size: 1.5em; } }
+@media only screen and (max-width: 480px) { header p span { display: none; } }
+
+.mobile-ad { display: none; padding: 0 10px; }
+@media only screen and (max-width: 480px) { .mobile-ad { display: block; padding-bottom: 10px; } }
+
+table.tablesorter .header { background: url("jquery.tablesorter/green/bg.gif") no-repeat scroll left 7px #C3D9FF; }
+table.tablesorter .headerSortUp { background: url("jquery.tablesorter/green/asc.gif") no-repeat scroll left 7px #C3D9FF; }
+table.tablesorter .headerSortDown { background: url("jquery.tablesorter/green/desc.gif") no-repeat scroll left 7px #C3D9FF; }
+	
+table#bricAdr th { cursor: pointer; padding-left: 15px; }
+table#bricAdr td span { font-size: 24px; line-height: 10px; }
+
+@media only screen and (max-width: 480px) {
+th:nth-of-type(6), th:nth-of-type(7), th:nth-of-type(8), th:nth-of-type(9) { display: none; }
+td:nth-of-type(6), td:nth-of-type(7), td:nth-of-type(8), td:nth-of-type(9) { display: none; }
+}
+
+.span-18 { width: 100%; max-width: 710px; }
+@media only screen and (max-width: 480px) { .span-18 { padding: 0 10px; } }
+.span-18 h4 { text-align: center; }
+@media only screen and (max-width: 480px) { .span-18 h4 { text-align: left; } }
+
+div.span-3 div { text-align: center; line-height: 14px; }
+@media only screen and (max-width: 480px) { div.span-3 { display: none; } }
+
+div.span-3 div img { padding-top: 4px; margin-bottom: -2px; }
+
+div#moreCountries { position: absolute; display: none; margin: -16px 0 -6px; padding-left: 5px; }
+
+.red { color: #b22222; }
+.green { color: green; }
+.orange { color: orange; }
+
+footer { padding: 0 10px; color: #999999; font-size: .9em; }
+	

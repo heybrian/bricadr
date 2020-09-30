@@ -1,0 +1,275 @@
+                      2710463792<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Africa, Israel &amp; the Middle East stocks traded on U.S. exchanges - BRICADR.com</title>
+<meta name="description" content="Comprehensive list of all African, Israeli and Middle Eastern stocks traded on American exchanges &mdash; Invest in Africa and the Middle East. Updated September 2019." />
+<meta name="keywords" content="BRIC, investing, Brazil, Russia, India, China, ADR, invest in emerging markets" />
+<link rel="stylesheet" href="css/blueprint/screen.css" media="screen, projection" />
+<link rel="stylesheet" href="css/blueprint/print.css" media="print" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+<link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" media="screen, projection" />
+<link rel="stylesheet" href="css/bricadr.css" media="screen, projection" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WQ2LMV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WQ2LMV');</script> 
+<!-- End Google Tag Manager -->
+<div class="container">
+  <header>
+    <p><a href="/">China</a> | <a href="../india_adr.php">India</a> | <a href="../brazil_adr.php">Brazil</a> | <a href="../russia_adr.php">Russia</a> | <a href="javascript: void(0);" onclick="document.getElementById('moreCountries').style.display = 'block';">More countries...</a> <span style="float: right;"><a class="bricBox" href="#bric_box">What&rsquo;s a BRIC?</a> | <a class="bricBox" href="#bric_box">What&rsquo;s an ADR?</a> |
+  <script src="../js/email_contact.js" type="text/javascript"></script>
+  </span></p>
+<div id="moreCountries">
+  <p>>>
+    <!--<a href="central_eastern_europe_adr.php">Central &amp; East Europe</a> | <a href="east_asia_adr.php">East Asia</a> | -->
+    <a href="africa_middle_east_adr.php">Africa / Middle East</a> | <a href="chile_adr.php">Chile</a> | <a href="mexico_adr.php">Mexico</a> | <a href="thailand_adr.php">Thailand</a> | <a href="southeast_asia_adr.php">Southeast Asia</a> <a href="javascript: void(0);" onclick="document.getElementById('moreCountries').style.display = 'none';"><img src="images/close_window.png" alt="Close window" width="13" height="13" style="position: relative; top: 2px;" /></a></p>
+</div>
+<h2>bricadr.com</h2>
+    <h1><strong>Africa &amp; Middle East:</strong> All stocks and funds</h1>
+    <h4>A list of all African, Israeli & Middle Eastern companies traded on U.S. exchanges, sortable by price, P/E, name and industry.<br />
+      Found a new ADR? <a href="mailto:heybej@gmail.com">Add it here</a>.</h4>
+  </header>
+  <hr />
+  <div class="column span-3"> 
+    <script type="text/javascript" src="js/google.vert.ad.js"></script> 
+    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script> 
+  </div>
+  <div class="column span-18">
+    <h4><strong>Sortable Table &mdash;</strong> Click column header to sort; hold &lsquo;shift&rsquo; key to subsort second column.</h4>
+    <table id="bricAdr" class="tablesorter">
+      <thead>
+        <tr>
+          <th>ADR Name</th>
+          <th>Ticker</th>
+          <th>Price</th>
+          <th>Change</th>
+          <th style="text-align:center">%</th>
+          <th>P/E</th>
+          <th>MarCap</th>
+          <th>Yield</th>
+          <th>Sector</th>
+          <th>Industry</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aberdeen Israel Fund</td>
+          <td><a href="http://finance.yahoo.com/q?s=ISL" target="_blank">ISL</a></td>
+          <td></td>          <td>Fund</td>
+          <td>Investment bank</td>
+        </tr>
+        <tr>
+          <td>Alon Blue Square Israel</td>
+          <td><a href="http://finance.yahoo.com/q?s=BSI" target="_blank">BSI</a></td>
+          <td></td>          <td>Consumer</td>
+          <td>Department stores</td>
+        </tr>
+        <tr>
+          <td>AngloGold Ashanti</td>
+          <td><a href="http://finance.yahoo.com/q?s=AU" target="_blank">AU</a></td>
+          <td></td>          <td>Mining</td>
+          <td>Gold</td>
+        </tr>
+        <tr>
+          <td>Cellcom Israel</td>
+          <td><a href="http://finance.yahoo.com/q?s=CEL" target="_blank">CEL</a></td>
+          <td></td>          <td>Telecom</td>
+          <td>Wireless (celular)</td>
+        </tr>
+        <tr>
+          <td>DRDGOLD Ltd.</td>
+          <td><a href="http://finance.yahoo.com/q?s=DRD" target="_blank">DRD</a></td>
+          <td></td>          <td>Mining</td>
+          <td> Gold</td>
+        </tr>
+        <tr>
+          <td>First Quantum Minera (Zambia)</td>
+          <td><a href="http://finance.yahoo.com/q?s=FQVLF" target="_blank">FQVLF</a></td>
+          <td></td>          <td>Mining</td>
+          <td> Copper</td>
+        </tr>
+        <tr>
+          <td>Gold Fields Ltd.</td>
+          <td><a href="http://finance.yahoo.com/q?s=GFI" target="_blank">GFI</a></td>
+          <td></td>          <td>Mining</td>
+          <td> Gold</td>
+        </tr>
+        <tr>
+          <td>Harmony Gold Mining Co. Ltd.</td>
+          <td><a href="http://finance.yahoo.com/q?s=HMY" target="_blank">HMY</a></td>
+          <td></td>          <td>Mining</td>
+          <td> Gold</td>
+        </tr>
+        <tr>
+          <td>Impala Platinum Holdings</td>
+          <td><a href="http://finance.yahoo.com/q?s=IMPUY" target="_blank">IMPUY</a></td>
+          <td></td>          <td>Mining</td>
+          <td>Platinum</td>
+        </tr>
+        <tr>
+          <td>iShares Israel Cap Invest</td>
+          <td><a href="http://finance.yahoo.com/q?s=EIS" target="_blank">EIS</a></td>
+          <td></td>          <td>Fund</td>
+          <td> ETF</td>
+        </tr>
+        <tr>
+          <td>iShares Frontier 100</td>
+          <td><a href="http://finance.yahoo.com/q?s=FM" target="_blank">FM</a></td>
+          <td></td>          <td>Fund</td>
+          <td> ETF</td>
+        </tr>
+        <tr>
+          <td>iShares Qatar Capped</td>
+          <td><a href="http://finance.yahoo.com/q?s=QAT" target="_blank">QAT</a></td>
+          <td></td>          <td>Fund</td>
+          <td> ETF</td>
+        </tr>
+        <tr>
+          <td>iShares UAE Capped</td>
+          <td><a href="http://finance.yahoo.com/q?s=UAE" target="_blank">UAE</a></td>
+          <td></td>          <td>Fund</td>
+          <td> ETF</td>
+        </tr>
+        <tr>
+          <td>iShares South Africa</td>
+          <td><a href="http://finance.yahoo.com/q?s=EZA" target="_blank">EZA</a></td>
+          <td></td>          <td>Fund</td>
+          <td> ETF</td>
+        </tr>
+        <tr>
+          <td>Market Vectors Africa</td>
+          <td><a href="http://finance.yahoo.com/q?s=AFK" target="_blank">AFK</a></td>
+          <td></td>          <td>Fund</td>
+          <td> ETF</td>
+        </tr>
+        <tr>
+          <td>Market Vectors Egypt</td>
+          <td><a href="http://finance.yahoo.com/q?s=EGPT" target="_blank">EGPT</a></td>
+          <td></td>          <td>Fund</td>
+          <td> ETF</td>
+        </tr>
+        <tr>
+          <td>Market Vectors Gulf States</td>
+          <td><a href="http://finance.yahoo.com/q?s=MES" target="_blank">MES</a></td>
+          <td></td>          <td>Fund</td>
+          <td> ETF</td>
+        </tr>
+        <tr>
+          <td>Market Vectors Israel</td>
+          <td><a href="http://finance.yahoo.com/q?s=ISRA" target="_blank">ISRA</a></td>
+          <td></td>          <td>Fund</td>
+          <td>ETF</td>
+        </tr>
+        <tr>
+          <td>MTN Group</td>
+          <td><a href="http://finance.yahoo.com/q?s=MTNOY" target="_blank">MTNOY</a></td>
+          <td></td>          <td>Technology</td>
+          <td> Telecom (celular)</td>
+        </tr>
+        <tr>
+          <td>Naspers</td>
+          <td><a href="http://finance.yahoo.com/q?s=NPSNY" target="_blank">NPSNY</a></td>
+          <td></td>          <td>Consumer</td>
+          <td> Media</td>
+        </tr>
+        <tr>
+          <td>Nile Pan Africa</td>
+          <td><a href="http://finance.yahoo.com/q?s=NAFAX" target="_blank">NAFAX</a></td>
+          <td></td>          <td>Fund</td>
+          <td> Mutual</td>
+        </tr>
+        <tr>
+          <td>Sappi Limited</td>
+          <td><a href="http://finance.yahoo.com/q?s=SPPJY" target="_blank">SPPJY</a></td>
+          <td></td>          <td>Fund</td>
+          <td> ETF</td>
+        </tr>
+        <tr>
+          <td>Sasol</td>
+          <td><a href="http://finance.yahoo.com/q?s=SSL" target="_blank">SSL</a></td>
+          <td></td>          <td>Energy</td>
+          <td> Oil</td>
+        </tr>
+        <tr>
+          <td>Sibanye Gold</td>
+          <td><a href="http://finance.yahoo.com/q?s=SGBL" target="_blank">SGBL</a></td>
+          <td></td>          <td>Mining</td>
+          <td>Gold</td>
+        </tr>
+        <tr>
+          <td>SPDR Emerging Middle East &amp; Africa</td>
+          <td><a href="http://finance.yahoo.com/q?s=GAF" target="_blank">GAF</a></td>
+          <td></td>          <td>Consumer</td>
+          <td> Paper</td>
+        </tr>
+        <tr>
+          <td>Standard Bank Group</td>
+          <td><a href="http://finance.yahoo.com/q?s=SGBLY" target="_blank">SGBLY</a></td>
+          <td></td>          <td>Finance</td>
+          <td> Bank</td>
+        </tr>
+        <tr>
+          <td>Telkom SA</td>
+          <td><a href="http://finance.yahoo.com/q?s=TLKGY" target="_blank">TLKGY</a></td>
+          <td></td>          <td>Technology</td>
+          <td> Telecom (fixed)</td>
+        </tr>
+        <tr>
+          <td>T. Rowe Price Africa &amp; Middle East</td>
+          <td><a href="http://finance.yahoo.com/q?s=TRAMX" target="_blank">TRAMX</a></td>
+          <td></td>          <td>Fund</td>
+          <td> Mutual</td>
+        </tr>
+        <tr>
+          <td>WisdomTree Middle East Dividend</td>
+          <td><a href="http://finance.yahoo.com/q?s=GULF" target="_blank">GULF</a></td>
+          <td></td>          <td>Fund</td>
+          <td> ETF</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="column span-3 last"> 
+    <script type="text/javascript" src="js/google.vert.ad.js"></script> 
+    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script> 
+  </div>
+  <hr />
+  <footer>
+    <p> 
+      <script type="text/javascript">
+		var oRows = document.getElementById('bricAdr').getElementsByTagName('tr');
+		var iRowCount = oRows.length - 1;
+		document.write(iRowCount + ' African &amp; Middle Eastern ADRs on this page.');
+	  </script>
+      <br />
+Financial Market Data powered by <a href="http://finance.yahoo.com/" target="_blank">Yahoo! Inc.</a> All rights reserved.<br />
+NYSE/AMEX/NASDAQ/OTC/other data delayed by two hours or more. Click ticker symbols for more current quote prices. <span style="float: right;"><a href="#">Back to top &#94;</a></span>
+</p>
+<h4>The information herein is provided by various sources including individual contributors not associated with the bricadr.com website and is not guaranteed by us and does not purport to be a complete or error-free statement or summary of the available data. As such, we do not warrant, endorse or guarantee the completeness, accuracy, integrity or timelines of the information. You must evaluate, and bear all risks associated with, the use of any information provided hereunder, including any reliance on the accuracy, completeness, safety or usefulness of such information. This information is not intended to be used as the primary basis of investment decisions. It should not be construed as financial or other advice or as an offer to sell or the solicitation of an offer to buy any security in any state where such an offer or solicitation would be illegal. Any information expressed herein on this date is subject to change without notice. Any opinions or assertions contained in this information do not represent the opinions or beliefs of the bricadr.com website or one or more of its employees, who may have a position in any of the securities discussed herein.</h4>
+  </footer>
+</div>
+<div style="display: none;">
+    <div id="bric_box" style="width:700px; height:500px; overflow:auto;">
+    <h2>What&rsquo;s a BRIC?</h2>
+    <p>BRIC (typically rendered as &ldquo;the BRICs&rdquo; or &ldquo;the BRIC countries&rdquo; or known as the &ldquo;Big Four&rdquo;) is a grouping acronym that refers to the countries of Brazil, Russia, India, and China that are deemed to all be at a similar stage of newly advanced economic development. The four countries, combined, currently account for more than a quarter of the world's land area and more than 40% of the world's population. Some economists believe the economic potential of Brazil, Russia, India, and China is such that they could become among the four most dominant economies by the year 2050.</p>
+    <p>The acronym was coined by Jim O&rsquo;Neill of Goldman Sachs in a 2001 paper entitled &ldquo;The World Needs Better Economic BRICs&rdquo;.</p>
+    <hr />
+    <h2>What&rsquo;s an ADR?</h2>
+    <p>ADR is an acronym that stands for American Depositary Receipt. An ADR represents ownership in the shares of a non-U.S. company that trades in U.S. financial markets. ADRs enable investors to buy foreign companies on United State exchanges (NYSE, NASDAQ) and in US dollars while paying the same fees as other US listed securities. Additionally, companies that list ADRs are subject to the same compliance and laws as other US companies. ADRs do contain risk and can be extremely volatile.</p>
+  </div>
+</div>
+<script src="js/jquery.document.ready.js" type="text/javascript"></script>
+</body>
+</html>
