@@ -1,5 +1,6 @@
 import React from 'react';
 import StockTable from './StockTable'; // adjust the path according to your project structure
+import './Body.css';
 
 const Body = ({ stocks }) => (
   <div>

@@ -1,0 +1,9 @@
+header {
+    display: block;
+    width: 980px;
+    margin: 0 auto;
+  }
+  
+  p { font-size: 13px; text-align: left; }
+  h2 { font-size: 25px; }
+  

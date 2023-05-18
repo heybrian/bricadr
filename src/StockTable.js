@@ -19,8 +19,8 @@ const StockTable = ({ stocks }) => (
         <div className='col'><a href={stock.url} target="_blank" rel="noreferrer">{stock.name}</a></div>
         <div className='col'><a href={stock.tickerUrl} target="_blank" rel="noreferrer">{stock.ticker}</a></div>
         <div className='col'>{stock.price}</div>
-        <div className='col'>{stock.change}</div>
-        <div className='col'>{stock.changePercent}</div>
+        <div className='col' style={{ color: stock.change < 0 ? '#b22222' : 'green' }}>{stock.change}</div>
+        <div className='col' style={{ color: stock.changePercent.startsWith('-') ? '#b22222' : 'green' }}>{stock.changePercent}</div>
         <div className='col'>{stock.pe}</div>
         <div className='col'>{stock.marcap}</div>
         <div className='col'>{stock.yield}</div>
