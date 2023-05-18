@@ -8,15 +8,15 @@ const Body = ({ stocks }) => (
     <h4>A list of all Chinese companies traded on U.S. exchanges, sortable by price, P/E, name and industry.<br />
       Found a new ADR? <a href="mailto:heybej@gmail.com">Add it here</a>.
     </h4>
-    <hr />
+
     <div className="column span-3">
-      <p>Ad</p>
+      <p className='ad'>Ad</p>
     </div>
     <StockTable stocks={stocks} />
     <div className="column span-3 last">
-      <p>Ad</p>
+      <p className='ad'>Ad</p>
     </div>
-    <hr />
+
   </div>
 );
 
