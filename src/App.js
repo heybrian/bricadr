@@ -40,7 +40,7 @@ const App = () => {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '185a693a09mshf1422df87471c44p193c5djsnac9425ffc46c',
+        'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
         'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
       }
     };
