@@ -1,17 +1,18 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header> 
     <p>
-      <a href="/">China</a> |&nbsp;
-      <a href="../india_adr.php">India</a> |&nbsp;
-      <a href="../brazil_adr.php">Brazil</a> |&nbsp;
-      <a href="../russia_adr.php">Russia</a> |&nbsp;
-      <a href="#">More countries...</a> 
+      <Link to="/">China</Link> |&nbsp;
+      <Link to="/india">India</Link> |&nbsp;
+      <Link to="/brazil">Brazil</Link> |&nbsp;
+      <Link to="/russia">Russia</Link> |&nbsp;
+      <Link to="#">More countries...</Link>
       <span style={{float: 'right'}}>
-        <a className="bricBox" href="#bric_box">What&rsquo;s a BRIC?</a> |&nbsp;
-        <a className="bricBox" href="#bric_box">What&rsquo;s an ADR?</a> |&nbsp;
+        <Link className="bricBox" to="#bric_box">What&rsquo;s a BRIC?</Link> |&nbsp;
+        <Link className="bricBox" to="#bric_box">What&rsquo;s an ADR?</Link> |&nbsp;
         <a href="mailto:heybej@gmail.com">Contact</a>
       </span>
     </p>
