@@ -74,7 +74,7 @@ const App = () => {
 
 
     useEffect(() => {
-        const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=CANPDY%2CBIDU'; 
+        const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=RDY%2CHDB'; 
         const options = {
           method: 'GET',
           headers: {
@@ -107,7 +107,7 @@ const App = () => {
         }, []);
 
   useEffect(() => {
-    const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=CAN%2CJD'; 
+    const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=ABEV%2CBBD'; 
     const options = {
       method: 'GET',
       headers: {
@@ -140,7 +140,7 @@ const App = () => {
     }, []);
 
   useEffect(() => {
-    const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=JKS'; 
+    const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=ERUS'; 
     const options = {
       method: 'GET',
       headers: {
@@ -177,10 +177,11 @@ const App = () => {
           <div>
             <Header />
             <Routes>
-              <Route path="/" element={<Body stocks={chinaStocks} />} />
-              <Route path="/india" element={<Body stocks={indiaStocks} />} />
-              <Route path="/russia" element={<Body stocks={russiaStocks} />} />
-              <Route path="/brazil" element={<Body stocks={brazilStocks} />} />
+            <Route path="/" element={<Body stocks={chinaStocks} country="China" />} />
+<Route path="/india" element={<Body stocks={indiaStocks} country="India" />} />
+<Route path="/russia" element={<Body stocks={russiaStocks} country="Russia" />} />
+<Route path="/brazil" element={<Body stocks={brazilStocks} country="Brazil" />} />
+
             </Routes>
             <Footer />
           </div>

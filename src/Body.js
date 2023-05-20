@@ -2,10 +2,10 @@ import React from 'react';
 import StockTable from './StockTable'; // adjust the path according to your project structure
 import './Body.css';
 
-const Body = ({ stocks }) => (
+const Body = ({ stocks, country }) => (
   <div>
-    <h1><strong>China:</strong> Sortable list of all stocks and funds</h1>
-    <h4>A list of all Chinese companies traded on U.S. exchanges, sortable by price, P/E, name and industry.<br />
+    <h1><strong>{country}:</strong> Sortable list of all stocks and funds</h1>
+    <h4>A list of all {country} companies traded on U.S. exchanges, sortable by price, P/E, name and industry.<br />
       Found a new ADR? <a href="mailto:heybej@gmail.com">Add it here</a>.
     </h4>
 
