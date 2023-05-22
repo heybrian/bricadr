@@ -62,8 +62,8 @@ const App = () => {
             pe: stock.trailingPE.toFixed(2),
             marcap: formatMarketCap(stock.marketCap),
             yield: stock.trailingAnnualDividendYield ? (stock.trailingAnnualDividendYield * 100).toFixed(2) + '%' : '\u00A0\u00A0\u00A0-',
-            sector: stock.sector,
-            industry: stock.industry
+            sector: stock.sector || '\u00A0\u00A0\u00A0-',
+            industry: stock.industry || '\u00A0\u00A0\u00A0-'
           }));
         setChinaStocks(newStocks);
       })
@@ -96,9 +96,9 @@ const App = () => {
                 pe: stock.trailingPE.toFixed(2),
                 marcap: formatMarketCap(stock.marketCap),
                 yield: stock.trailingAnnualDividendYield ? (stock.trailingAnnualDividendYield * 100).toFixed(2) + '%' : '\u00A0\u00A0\u00A0-',
-                sector: stock.sector,
-                industry: stock.industry
-              }));
+                sector: stock.sector || '\u00A0\u00A0\u00A0-',
+                industry: stock.industry || '\u00A0\u00A0\u00A0-'
+                  }));
             setIndiaStocks(newStocks);
           })
           .catch(error => {
@@ -129,8 +129,8 @@ const App = () => {
             pe: stock.trailingPE.toFixed(2),
             marcap: formatMarketCap(stock.marketCap),
             yield: stock.trailingAnnualDividendYield ? (stock.trailingAnnualDividendYield * 100).toFixed(2) + '%' : '\u00A0\u00A0\u00A0-',
-            sector: stock.sector,
-            industry: stock.industry
+            sector: stock.sector || '\u00A0\u00A0\u00A0-',
+            industry: stock.industry || '\u00A0\u00A0\u00A0-'
           }));
         setBrazilStocks(newStocks);
       })
@@ -140,7 +140,7 @@ const App = () => {
     }, []);
 
   useEffect(() => {
-    const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=ERUS'; 
+    const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=NFLX'; 
     const options = {
       method: 'GET',
       headers: {
@@ -162,8 +162,8 @@ const App = () => {
             pe: stock.trailingPE.toFixed(2),
             marcap: formatMarketCap(stock.marketCap),
             yield: stock.trailingAnnualDividendYield ? (stock.trailingAnnualDividendYield * 100).toFixed(2) + '%' : '\u00A0\u00A0\u00A0-',
-            sector: stock.sector,
-            industry: stock.industry
+            sector: stock.sector || '\u00A0\u00A0\u00A0-',
+            industry: stock.industry || 'N/A'
           }));
         setRussiaStocks(newStocks);
       })
@@ -178,10 +178,9 @@ const App = () => {
             <Header />
             <Routes>
             <Route path="/" element={<Body stocks={chinaStocks} country="China" />} />
-<Route path="/india" element={<Body stocks={indiaStocks} country="India" />} />
-<Route path="/russia" element={<Body stocks={russiaStocks} country="Russia" />} />
-<Route path="/brazil" element={<Body stocks={brazilStocks} country="Brazil" />} />
-
+              <Route path="/india" element={<Body stocks={indiaStocks} country="India" />} />
+              <Route path="/russia" element={<Body stocks={russiaStocks} country="Russia" />} />
+              <Route path="/brazil" element={<Body stocks={brazilStocks} country="Brazil" />} />
             </Routes>
             <Footer />
           </div>
