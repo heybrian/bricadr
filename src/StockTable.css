@@ -1,0 +1,19 @@
+/* StockTable.css */
+.row.bg-primary {
+    background-color: #f0f9ff !important;
+    color: #2281CF !important;
+    border-top: #82cffa;
+}
+
+.row.border:nth-child(even) {
+    background-color: white;
+}
+
+.row.border:nth-child(odd) {
+    background-color: #e5ecf9;
+}
+
+.row > .col, .row > [class*="col-"] {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

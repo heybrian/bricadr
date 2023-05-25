@@ -40,7 +40,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=ACGBY%2CBABA'; 
+    const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=VNET%2CACGBY%2CBABA%2CANPDY%2CBIDU%2CCAN%2CJD%2CJKS'; 
     const options = {
       method: 'GET',
       headers: {
@@ -59,7 +59,7 @@ const App = () => {
             price: stock.regularMarketPrice.toFixed(2),
             change: stock.regularMarketChange.toFixed(2),
             changePercent: stock.regularMarketChangePercent.toFixed(2) + '%',
-            pe: stock.trailingPE.toFixed(2),
+            pe: stock.trailingPE ? stock.trailingPE.toFixed(2) : '\u00A0\u00A0\u00A0-',
             marcap: formatMarketCap(stock.marketCap),
             yield: stock.trailingAnnualDividendYield ? (stock.trailingAnnualDividendYield * 100).toFixed(2) + '%' : '\u00A0\u00A0\u00A0-',
             sector: stock.sector || '\u00A0\u00A0\u00A0-',

@@ -10,11 +10,12 @@ const Body = ({ stocks, country }) => (
     </h4>
 
     <div className="column span-3">
-      <p className='ad'>Ad</p>
+      <p>&nbsp;</p>
+      {/*<p className='ad'>Ad</p>*/}
     </div>
     <StockTable stocks={stocks} />
     <div className="column span-3 last">
-      <p className='ad'>Ad</p>
+      {/*<p className='ad'>Ad</p>*/}
     </div>
 
   </div>
