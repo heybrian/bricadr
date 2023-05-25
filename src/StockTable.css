@@ -2,7 +2,7 @@
 .row.bg-primary {
     background-color: #f0f9ff !important;
     color: #2281CF !important;
-    border-top: #82cffa;
+    border-top: #82cffa !important;
 }
 
 .row.border:nth-child(even) {
