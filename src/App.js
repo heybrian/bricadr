@@ -45,7 +45,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    const url = 'https://holistic-finance-stock-data.p.rapidapi.com/api/v1/profile?symbol=VNET,ACGBY,BABA,ANPDY,BIDU,BACHY,BCMXY,BILI,BYDDF,CAN,CMCM,CAAS,CCOZY,CICHY,CGA,CNICF,CJJD,HTHT,CIHKY,CREG,CYD,CLPHY,CCM,DQ,YINN,DUO,FUTU,GNENF,GELYF,CHIX,GWLLF,GURE,HRSHF,HOLI,HUYA,IDCBY,FXI,EWH,EWT,JD,JKS,YY,KNDI,KC,KSFTF,KWEB,LEJU,LNVGY,LI,LNNGF,LITB,PEK,CNY,MPNGY,MOGU,MOMO,CAF,NTES,EDU,NIO,NIU,NOAH,SEED,FENG,PDD,PNGAY,PGJ,FXP,RCON,RENN,BEST,SOHU,SOS,TAL,TAOP,TEDU,TCEHY,TME,NCTY,TCOM,TSGTY,UTSI,TIGR,VIPS,WB,CYB,ASHR,ASHS,CN,XIN,XPEV,XNET,YUMC';
+    const url = 'https://holistic-finance-stock-data.p.rapidapi.com/api/v1/profile?symbol=ACGBY,CAN,YY';
     const options = {
       method: 'GET',
       headers: {
@@ -59,6 +59,7 @@ const App = () => {
       .then(result => {
         const newStocks = result.map(stock => ({
           name: toTitleCase(cleanCompanyName(stock.companyName)),
+          website: stock.website,
           tickerUrl: 'https://finance.yahoo.com/quote/' + stock.symbol,
           ticker: stock.symbol,
           price: stock.price ? stock.price.toFixed(2) : '-',
@@ -81,30 +82,31 @@ const App = () => {
 
 
     useEffect(() => {
-        const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=RDY'; 
+        const url = 'https://holistic-finance-stock-data.p.rapidapi.com/api/v1/profile?symbol=IBN,MMYT'; 
         const options = {
           method: 'GET',
           headers: {
             'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
-            'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
+            'X-RapidAPI-Host': 'holistic-finance-stock-data.p.rapidapi.com'
           }
         };
       
         fetch(url, options)
           .then(response => response.json())
           .then(result => {
-            const newStocks = result.quoteResponse.result.map(stock => ({
-                name: toTitleCase(cleanCompanyName(stock.shortName)),
-                tickerUrl: 'https://finance.yahoo.com/quote/' + stock.symbol,
-                ticker: stock.symbol,
-                price: stock.regularMarketPrice.toFixed(2),
-                change: stock.regularMarketChange.toFixed(2),
-                changePercent: stock.regularMarketChangePercent.toFixed(2) + '%',
-                pe: stock.trailingPE ? stock.trailingPE.toFixed(2) : '\u00A0\u00A0\u00A0-',
-                marcap: stock.marketCap ? formatMarketCap(stock.marketCap) : '\u00A0\u00A0\u00A0-',
-                yield: stock.trailingAnnualDividendYield ? (stock.trailingAnnualDividendYield * 100).toFixed(2) + '%' : '\u00A0\u00A0\u00A0-',
-                sector: stock.sector || '\u00A0\u00A0\u00A0-',
-                industry: stock.industry || '\u00A0\u00A0\u00A0-'
+            const newStocks = result.map(stock => ({
+              name: toTitleCase(cleanCompanyName(stock.companyName)),
+              website: stock.website,
+              tickerUrl: 'https://finance.yahoo.com/quote/' + stock.symbol,
+              ticker: stock.symbol,
+              price: stock.price ? stock.price.toFixed(2) : '-',
+              change: stock.changes ? stock.changes.toFixed(2) : '0.00',
+              changePercent: stock.changes ? ((stock.changes / stock.price) * 100).toFixed(2) + '%' : '0.00%',
+              pe: stock.pe ? stock.pe.toFixed(2) : '-',
+              marcap: stock.mktCap ? formatMarketCap(stock.mktCap) : '-',
+              yield: stock.lastDiv ? (stock.lastDiv * 1).toFixed(2) + '%' : '-',
+              sector: stock.sector || '-',
+              industry: stock.industry || '-'
               }));
             setIndiaStocks(newStocks);
           })
@@ -114,30 +116,31 @@ const App = () => {
         }, []);
 
   useEffect(() => {
-    const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=ABEV'; 
+    const url = 'https://holistic-finance-stock-data.p.rapidapi.com/api/v1/profile?symbol=ABEV,BBD'; 
     const options = {
       method: 'GET',
       headers: {
         'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
-        'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
+        'X-RapidAPI-Host': 'holistic-finance-stock-data.p.rapidapi.com'
       }
     };
   
     fetch(url, options)
       .then(response => response.json())
       .then(result => {
-        const newStocks = result.quoteResponse.result.map(stock => ({
-            name: toTitleCase(cleanCompanyName(stock.shortName)),
-            tickerUrl: 'https://finance.yahoo.com/quote/' + stock.symbol,
-            ticker: stock.symbol,
-            price: stock.regularMarketPrice.toFixed(2),
-            change: stock.regularMarketChange.toFixed(2),
-            changePercent: stock.regularMarketChangePercent.toFixed(2) + '%',
-            pe: stock.trailingPE ? stock.trailingPE.toFixed(2) : '\u00A0\u00A0\u00A0-',
-            marcap: stock.marketCap ? formatMarketCap(stock.marketCap) : '\u00A0\u00A0\u00A0-',
-            yield: stock.trailingAnnualDividendYield ? (stock.trailingAnnualDividendYield * 100).toFixed(2) + '%' : '\u00A0\u00A0\u00A0-',
-            sector: stock.sector || '\u00A0\u00A0\u00A0-',
-            industry: stock.industry || '\u00A0\u00A0\u00A0-'
+        const newStocks = result.map(stock => ({
+          name: toTitleCase(cleanCompanyName(stock.companyName)),
+          website: stock.website,
+          tickerUrl: 'https://finance.yahoo.com/quote/' + stock.symbol,
+          ticker: stock.symbol,
+          price: stock.price ? stock.price.toFixed(2) : '-',
+          change: stock.changes ? stock.changes.toFixed(2) : '0.00',
+          changePercent: stock.changes ? ((stock.changes / stock.price) * 100).toFixed(2) + '%' : '0.00%',
+          pe: stock.pe ? stock.pe.toFixed(2) : '-',
+          marcap: stock.mktCap ? formatMarketCap(stock.mktCap) : '-',
+          yield: stock.lastDiv ? (stock.lastDiv * 1).toFixed(2) + '%' : '-',
+          sector: stock.sector || '-',
+          industry: stock.industry || '-'
           }));
         setBrazilStocks(newStocks);
       })
@@ -147,30 +150,31 @@ const App = () => {
     }, []);
 
   useEffect(() => {
-    const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=CEE'; 
+    const url = 'https://holistic-finance-stock-data.p.rapidapi.com/api/v1/profile?symbol=CEE,YNDX'; 
     const options = {
       method: 'GET',
       headers: {
         'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
-        'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
+        'X-RapidAPI-Host': 'holistic-finance-stock-data.p.rapidapi.com'
       }
     };
   
     fetch(url, options)
       .then(response => response.json())
       .then(result => {
-        const newStocks = result.quoteResponse.result.map(stock => ({
-            name: toTitleCase(cleanCompanyName(stock.shortName)),
-            tickerUrl: 'https://finance.yahoo.com/quote/' + stock.symbol,
-            ticker: stock.symbol,
-            price: stock.regularMarketPrice.toFixed(2),
-            change: stock.regularMarketChange.toFixed(2),
-            changePercent: stock.regularMarketChangePercent.toFixed(2) + '%',
-            pe: stock.trailingPE ? stock.trailingPE.toFixed(2) : '\u00A0\u00A0\u00A0-',
-            marcap: stock.marketCap ? formatMarketCap(stock.marketCap) : '\u00A0\u00A0\u00A0-',
-            yield: stock.trailingAnnualDividendYield ? (stock.trailingAnnualDividendYield * 100).toFixed(2) + '%' : '\u00A0\u00A0\u00A0-',
-            sector: stock.sector || '\u00A0\u00A0\u00A0-',
-            industry: stock.industry || '\u00A0\u00A0\u00A0-'
+        const newStocks = result.map(stock => ({
+          name: toTitleCase(cleanCompanyName(stock.companyName)),
+          website: stock.website,
+          tickerUrl: 'https://finance.yahoo.com/quote/' + stock.symbol,
+          ticker: stock.symbol,
+          price: stock.price ? stock.price.toFixed(2) : '-',
+          change: stock.changes ? stock.changes.toFixed(2) : '0.00',
+          changePercent: stock.changes ? ((stock.changes / stock.price) * 100).toFixed(2) + '%' : '0.00%',
+          pe: stock.pe ? stock.pe.toFixed(2) : '-',
+          marcap: stock.mktCap ? formatMarketCap(stock.mktCap) : '-',
+          yield: stock.lastDiv ? (stock.lastDiv * 1).toFixed(2) + '%' : '-',
+          sector: stock.sector || '-',
+          industry: stock.industry || '-'
           }));
         setRussiaStocks(newStocks);
       })
