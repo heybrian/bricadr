@@ -2,13 +2,13 @@ import React from 'react';
 import './StockTable.css';
 
 const StockTable = ({ stocks }) => (
-  <div className='container'>
+  <div className='container stock-table'>
     <div className='row bg-primary text-white'>
       <div className='col-2'>ADR Name</div>
       <div className='col-1'>Ticker</div>
       <div className='col-1'>Price</div>
       <div className='col-1'>Change</div>
-      <div className='col-1'>%</div>
+      <div className='col-1'>{'\u00A0'}{'\u00A0'}%</div>
       {/*<div className='col-1 d-none d-sm-block'>P/E</div>*/}
       <div className='col-1 d-none d-sm-block'>MarCap</div>
       <div className='col-1 d-none d-sm-block'>Yield</div>
