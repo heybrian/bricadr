@@ -45,37 +45,39 @@ const App = () => {
   };
 
   useEffect(() => {
-    const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=VNET%2CACGBY%2CBABA%2CANPDY%2CBIDU%2CBACHY%2CBCMXY%2CBILI%2CBYDDF%2CCAN%2CCMCM%2CCAAS%2CCCOZY%2CCICHY%2CCGA%2CCNICF%2CCJJD%2CHTHT%2CCIHKY%2CCREG%2CCYD%2CCLPHY%2CCCM%2CDQ%2CYINN%2CDUO%2CFUTU%2CGNENF%2CGELYF%2CCHIX%2CGWLLF%2CGURE%2CHRSHF%2CHOLI%2CHUYA%2CIDCBY%2CFXI%2CEWH%2CEWT%2CJD%2CJKS%2CYY%2CKNDI%2CKC%2CKSFTF%2CKWEB%2CLEJU%2CLNVGY%2CLI%2CLNNGF%2CLITB%2CPEK%2CCNY%2CMPNGY%2CMOGU%2CMOMO%2CCAF%2CNTES%2CEDU%2CNIO%2CNIU%2CNOAH%2CSEED%2CFENG%2C%2CPDD%2CPNGAY%2CPGJ%2CFXP%2CRCON%2CRENN%2CBEST%2CSOHU%2CSOS%2C%2CTAL%2CTAOP%2CTEDU%2CTCEHY%2CTME%2CNCTY%2CTCOM%2CTSGTY%2CUTSI%2CTIGR%2CVIPS%2CWB%2CCYB%2CASHR%2CASHS%2CCN%2CXIN%2CXPEV%2CXNET%2CYUMC'; 
+    const url = 'https://holistic-finance-stock-data.p.rapidapi.com/api/v1/profile?symbol=VNET,ACGBY,BABA,ANPDY,BIDU,BACHY,BCMXY,BILI,BYDDF,CAN,CMCM,CAAS,CCOZY,CICHY,CGA,CNICF,CJJD,HTHT,CIHKY,CREG,CYD,CLPHY,CCM,DQ,YINN,DUO,FUTU,GNENF,GELYF,CHIX,GWLLF,GURE,HRSHF,HOLI,HUYA,IDCBY,FXI,EWH,EWT,JD,JKS,YY,KNDI,KC,KSFTF,KWEB,LEJU,LNVGY,LI,LNNGF,LITB,PEK,CNY,MPNGY,MOGU,MOMO,CAF,NTES,EDU,NIO,NIU,NOAH,SEED,FENG,PDD,PNGAY,PGJ,FXP,RCON,RENN,BEST,SOHU,SOS,TAL,TAOP,TEDU,TCEHY,TME,NCTY,TCOM,TSGTY,UTSI,TIGR,VIPS,WB,CYB,ASHR,ASHS,CN,XIN,XPEV,XNET,YUMC';
     const options = {
       method: 'GET',
       headers: {
         'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
-        'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
+        'X-RapidAPI-Host': 'holistic-finance-stock-data.p.rapidapi.com'
       }
     };
   
     fetch(url, options)
       .then(response => response.json())
       .then(result => {
-        const newStocks = result.quoteResponse.result.map(stock => ({
-            name: toTitleCase(cleanCompanyName(stock.shortName)),
-            tickerUrl: 'https://finance.yahoo.com/quote/' + stock.symbol,
-            ticker: stock.symbol,
-            price: stock.regularMarketPrice.toFixed(2),
-            change: stock.regularMarketChange.toFixed(2),
-            changePercent: stock.regularMarketChangePercent.toFixed(2) + '%',
-            pe: stock.trailingPE ? stock.trailingPE.toFixed(2) : '\u00A0\u00A0\u00A0-',
-            marcap: stock.marketCap ? formatMarketCap(stock.marketCap) : '\u00A0\u00A0\u00A0-',
-            yield: stock.trailingAnnualDividendYield ? (stock.trailingAnnualDividendYield * 100).toFixed(2) + '%' : '\u00A0\u00A0\u00A0-',
-            sector: stock.sector || '\u00A0\u00A0\u00A0-',
-            industry: stock.industry || '\u00A0\u00A0\u00A0-'
-          }));
+        const newStocks = result.map(stock => ({
+          name: toTitleCase(cleanCompanyName(stock.companyName)),
+          tickerUrl: 'https://finance.yahoo.com/quote/' + stock.symbol,
+          ticker: stock.symbol,
+          price: stock.price ? stock.price.toFixed(2) : '-',
+          change: stock.changes ? stock.changes.toFixed(2) : '0.00',
+          changePercent: stock.changes ? ((stock.changes / stock.price) * 100).toFixed(2) + '%' : '0.00%',
+          pe: stock.pe ? stock.pe.toFixed(2) : '-',
+          marcap: stock.mktCap ? formatMarketCap(stock.mktCap) : '-',
+          yield: stock.lastDiv ? (stock.lastDiv * 1).toFixed(2) + '%' : '-',
+          sector: stock.sector || '-',
+          industry: stock.industry || '-'
+        }));
         setChinaStocks(newStocks);
       })
       .catch(error => {
         console.error(error);
       });
     }, []);
+  
+  
 
 
     useEffect(() => {
