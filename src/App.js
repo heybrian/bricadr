@@ -45,7 +45,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    const url = 'https://holistic-finance-stock-data.p.rapidapi.com/api/v1/profile?symbol=ACGBY,CAN,YY';
+    const url = 'https://holistic-finance-stock-data.p.rapidapi.com/api/v1/profile?symbol=VNET,ACGBY,BABA,ANPDY,BIDU,BACHY';
     const options = {
       method: 'GET',
       headers: {
