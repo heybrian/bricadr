@@ -6,7 +6,7 @@ import EmailLink from './EmailLink';
 const Header = () => (
   <header> 
     <p>
-      <Link to="/China">China</Link> |&nbsp;
+      <Link to="/">China</Link> |&nbsp;
       <Link to="/india">India</Link> |&nbsp;
       <Link to="/brazil">Brazil</Link> |&nbsp;
       <Link to="/russia">Russia</Link>{/* |&nbsp;

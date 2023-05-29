@@ -221,7 +221,7 @@ const cleanCompanyName = (str) => {
           <div>
             <Header />
             <Routes>
-            <Route path="/china" element={<Body stocks={chinaStocks} country="China" />} />
+            <Route path="/" element={<Body stocks={chinaStocks} country="China" />} />
               <Route path="/india" element={<Body stocks={indiaStocks} country="India" />} />
               <Route path="/russia" element={<Body stocks={russiaStocks} country="Russia" />} />
               <Route path="/brazil" element={<Body stocks={brazilStocks} country="Brazil" />} />
