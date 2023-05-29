@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import StockTable from './StockTable'; // adjust the path according to your project structure
 import './Body.css';
+import AddStock from './AddStock';
 
-const Body = ({ stocks, country }) => (
-  <div>
+const Body = ({stocks, country}) => {
+  const [showAddStock, setShowAddStock] = useState(false);
+
+  return (
+    <div>
     <h1><strong>{country}:</strong> Sortable list of all stocks and funds</h1>
     <h4>A list of all {country} companies traded on U.S. exchanges, sortable by price, P/E, name and industry.<br />
-      Found a new ADR? <a href="mailto:heybej@gmail.com">Add it here</a>.
-    </h4>
-
+    Found a new ADR? <span onClick={() => setShowAddStock(true)} style={{color: "blue", cursor: "pointer"}}>Add it here</span>.</h4>
+    {showAddStock && <AddStock close={() => setShowAddStock(false)} />}
     <div className="column span-3">
       <p>&nbsp;</p>
       {/*<p className='ad'>Ad</p>*/}
@@ -20,5 +23,6 @@ const Body = ({ stocks, country }) => (
 
   </div>
 );
+};
 
 export default Body;

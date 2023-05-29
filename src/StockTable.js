@@ -29,14 +29,41 @@ class StockTable extends React.Component {
   
     let stocks = [...this.state.stocks]; // create a copy
     stocks.sort((a, b) => {
-      let aValue = (column === 'price' || column === 'marcap') ? parseFloat(a[column]) : column === 'name' ? a[column].toLowerCase() : a[column];
-      let bValue = (column === 'price' || column === 'marcap') ? parseFloat(b[column]) : column === 'name' ? b[column].toLowerCase() : b[column];
+      let aValue = a[column];
+      let bValue = b[column];
+      
+      if (column === 'price' || column === 'marcap') {
+        aValue = a[column] === '-' ? '0' : a[column];
+        bValue = b[column] === '-' ? '0' : b[column];
+  
+        let suffixes = {'K': 1e3, 'M': 1e6, 'B': 1e9, 'T': 1e12};
+        let suffixA = aValue.charAt(aValue.length-1);
+        let suffixB = bValue.charAt(bValue.length-1);
+  
+        if(suffixes[suffixA]) {
+          aValue = parseFloat(aValue.slice(0, -1)) * suffixes[suffixA];
+        } else {
+          aValue = parseFloat(aValue);
+        }
+  
+        if(suffixes[suffixB]) {
+          bValue = parseFloat(bValue.slice(0, -1)) * suffixes[suffixB];
+        } else {
+          bValue = parseFloat(bValue);
+        }
+      } else if (column === 'name') {
+        aValue = aValue.toLowerCase();
+        bValue = bValue.toLowerCase();
+      }
+      
       if (aValue < bValue) return sortAscending ? -1 : 1;
       if (aValue > bValue) return sortAscending ? 1 : -1;
       return 0;
     });
     this.setState({stocks, sortColumn: column, sortAscending});
   }
+  
+  
   
   
 
@@ -61,7 +88,7 @@ class StockTable extends React.Component {
             {this.state.sortColumn === 'change' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
           </div>
           <div className='col-1' onClick={() => this.sort('changePercent')}>
-            {'% '}
+            {' % '}
             {this.state.sortColumn === 'changePercent' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
           </div>
           <div className='col-1 d-none d-sm-block' onClick={() => this.sort('marcap')}>

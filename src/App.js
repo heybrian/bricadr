@@ -78,7 +78,7 @@ const cleanCompanyName = (str) => {
   };
 
   useEffect(() => {
-    const url = 'https://holistic-finance-stock-data.p.rapidapi.com/api/v1/profile?symbol=ACGBY,BABA,ANPDY,BIDU,BACHY,BCMXY,BILI,BYDDF,CAN,CMCM,CAAS,CCOZY,CICHY,CGA,CNICF,CJJD,HTHT,CIHKY,CREG,CYD,CLPHY,CCM,DQ,YINN,DUO,FUTU,GNENF,GELYF,CHIX,GWLLF,GURE,HRSHF,HOLI,HUYA,IDCBY,FXI,EWH,EWT,JD,JKS,YY,KNDI,KC,KSFTF,KWEB,LEJU,LNVGY,LI,LNNGF,LITB,PEK,CNY,MPNGY,MOGU,MOMO,CAF,NTES,EDU,NIO,NIU,NOAH,SEED,FENG,PDD,PNGAY,PGJ,FXP,RCON,RENN,BEST,SOHU,SOS,TAL,TAOP,TEDU,TCEHY,TME,NCTY,TCOM,TSGTY,UTSI,TIGR,VIPS,VNET,WB,CYB,ASHR,ASHS,CN,XIN,XPEV,XNET,YUMC';
+    const url = 'https://holistic-finance-stock-data.p.rapidapi.com/api/v1/profile?symbol=ACGBY,BABA,ANPDY';
     const options = {
       method: 'GET',
       headers: {
@@ -221,7 +221,7 @@ const cleanCompanyName = (str) => {
           <div>
             <Header />
             <Routes>
-            <Route path="/" element={<Body stocks={chinaStocks} country="China" />} />
+            <Route path="/china" element={<Body stocks={chinaStocks} country="China" />} />
               <Route path="/india" element={<Body stocks={indiaStocks} country="India" />} />
               <Route path="/russia" element={<Body stocks={russiaStocks} country="Russia" />} />
               <Route path="/brazil" element={<Body stocks={brazilStocks} country="Brazil" />} />
