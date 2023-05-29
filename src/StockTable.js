@@ -23,18 +23,22 @@ class StockTable extends React.Component {
     let sortAscending = this.state.sortColumn === column ? !this.state.sortAscending : true;
   
     // The first time a column is clicked, numbers should sort high to low (opposite of strings)
-    if (this.state.sortColumn !== column && typeof this.state.stocks[0][column] === 'number') {
+    if (this.state.sortColumn !== column && (typeof this.state.stocks[0][column] === 'number' || column === 'price' || column === 'marcap')) {
       sortAscending = false;
     }
   
     let stocks = [...this.state.stocks]; // create a copy
     stocks.sort((a, b) => {
-      if (a[column] < b[column]) return sortAscending ? -1 : 1;
-      if (a[column] > b[column]) return sortAscending ? 1 : -1;
+      let aValue = (column === 'price' || column === 'marcap') ? parseFloat(a[column]) : column === 'name' ? a[column].toLowerCase() : a[column];
+      let bValue = (column === 'price' || column === 'marcap') ? parseFloat(b[column]) : column === 'name' ? b[column].toLowerCase() : b[column];
+      if (aValue < bValue) return sortAscending ? -1 : 1;
+      if (aValue > bValue) return sortAscending ? 1 : -1;
       return 0;
     });
     this.setState({stocks, sortColumn: column, sortAscending});
-  }  
+  }
+  
+  
 
   render() {
     return (

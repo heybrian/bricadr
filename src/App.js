@@ -20,11 +20,42 @@ const App = () => {
     return str;
   };
 
-  // Function to clean company name
-  const cleanCompanyName = (str) => {
-    let cleanName = str.replace(/,\sInc.$|Holding\sLimited$|Holding\sCompany\sLimi$|\sUnsp$/g, '');
-    return cleanName;
-  };
+// Function to clean company name
+const cleanCompanyName = (str) => {
+  // First, replace "PDD Holdings Inc." with "Pinduoduo"
+  let cleanName = str.replace(/PDD Holdings Inc./g, 'Pinduoduo');
+
+  // Then remove these patterns at the end
+  const suffixes = [
+      ' Company of China, Ltd.',
+      ' Group Holding Limited',
+      ' Corporation Limited',
+      ' Group Limited',
+      ' Holdings Limited',
+      ' Holding Limited',
+      ' Company Limited',
+      ' Limited',
+      ' Holding Co., Ltd.',
+      ' Co., Ltd.',
+      ', Ltd.',
+      ' Ltd.',
+      ' Corp.',
+      ' Group, Inc.',
+      ' Group Inc.',
+      ' Group',
+      ', Inc.',
+      ' Inc.'
+  ];
+  
+  for(let suffix of suffixes) {
+      const regex = new RegExp(suffix + '$', 'g');
+      cleanName = cleanName.replace(regex, '');
+  }
+
+  return cleanName.trim();
+};
+
+
 
   // Function to round a number to a specific precision
   const roundToPrecision = (num, precision) => {
@@ -34,18 +65,20 @@ const App = () => {
   // Function to format market capitalization
   const formatMarketCap = (value) => {
     if (value >= 1e12) {
-      return roundToPrecision(value / 1e12, 1) + 'T';
+      return roundToPrecision(value / 1e12, 1) + ' T';
     } else if (value >= 1e9) {
-      return roundToPrecision(value / 1e9, 1) + 'B';
+      return roundToPrecision(value / 1e9, 1) + ' B';
     } else if (value >= 1e6) {
-      return roundToPrecision(value / 1e6, 1) + 'M';
+      return roundToPrecision(value / 1e6, 1) + ' M';
+    } else if (value >= 1e3) {
+      return roundToPrecision(value / 1e3, 1) + ' K';
     } else {
       return value.toString();
     }
   };
 
   useEffect(() => {
-    const url = 'https://holistic-finance-stock-data.p.rapidapi.com/api/v1/profile?symbol=VNET,ACGBY,BABA,ANPDY,BIDU,BACHY';
+    const url = 'https://holistic-finance-stock-data.p.rapidapi.com/api/v1/profile?symbol=ACGBY,BABA,ANPDY,BIDU,BACHY,BCMXY,BILI,BYDDF,CAN,CMCM,CAAS,CCOZY,CICHY,CGA,CNICF,CJJD,HTHT,CIHKY,CREG,CYD,CLPHY,CCM,DQ,YINN,DUO,FUTU,GNENF,GELYF,CHIX,GWLLF,GURE,HRSHF,HOLI,HUYA,IDCBY,FXI,EWH,EWT,JD,JKS,YY,KNDI,KC,KSFTF,KWEB,LEJU,LNVGY,LI,LNNGF,LITB,PEK,CNY,MPNGY,MOGU,MOMO,CAF,NTES,EDU,NIO,NIU,NOAH,SEED,FENG,PDD,PNGAY,PGJ,FXP,RCON,RENN,BEST,SOHU,SOS,TAL,TAOP,TEDU,TCEHY,TME,NCTY,TCOM,TSGTY,UTSI,TIGR,VIPS,VNET,WB,CYB,ASHR,ASHS,CN,XIN,XPEV,XNET,YUMC';
     const options = {
       method: 'GET',
       headers: {
@@ -68,8 +101,8 @@ const App = () => {
           pe: stock.pe ? stock.pe.toFixed(2) : '-',
           marcap: stock.mktCap ? formatMarketCap(stock.mktCap) : '-',
           yield: stock.lastDiv ? (stock.lastDiv * 1).toFixed(2) + '%' : '-',
-          sector: stock.sector || '-',
-          industry: stock.industry || '-'
+          sector: stock.sector || 'Financial',
+          industry: stock.industry || 'Fund'
         }));
         setChinaStocks(newStocks);
       })
