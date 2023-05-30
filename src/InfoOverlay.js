@@ -34,19 +34,19 @@ class InfoOverlay extends React.Component {
           </Modal.Header>
           <Modal.Body>
             <p>
-              BRIC (typically rendered as “the BRICs” or “the BRIC countries” or
-              known as the “Big Four”) is a grouping acronym that refers to the
-              countries of Brazil, Russia, India, and China that are deemed to
-              all be at a similar stage of newly advanced economic development.
-              The four countries, combined, currently account for more than a
-              quarter of the world's land area and more than 40% of the world's
-              population. Some economists believe the economic potential of
-              Brazil, Russia, India, and China is such that they could become
-              among the four most dominant economies by the year 2050.
+              The acronym BRIC, often rendered as "the BRICs" or "the BRIC
+              countries" or referred to as the "Big Four," represents a group of
+              countries consisting of Brazil, Russia, India, and China. These
+              nations are considered to be at a comparable stage of newly
+              advanced economic development. Collectively, they account for more
+              than a quarter of the world’s land area and over 40% of its
+              population. Some economists project that due to their significant
+              economic potential, these four countries may become among the most
+              dominant economies by the year 2050.
             </p>
             <p>
-              The acronym was coined by Jim O’Neill of Goldman Sachs in a 2001
-              paper entitled “The World Needs Better Economic BRICs”.
+              This acronym was first coined by Jim O’Neill from Goldman Sachs in
+              his 2001 paper titled "The World Needs Better Economic BRICs.”
             </p>
           </Modal.Body>
           <Modal.Header>
@@ -54,14 +54,15 @@ class InfoOverlay extends React.Component {
           </Modal.Header>
           <Modal.Body>
             <p>
-              ADR is an acronym that stands for American Depositary Receipt. An
-              ADR represents ownership in the shares of a non-U.S. company that
-              trades in U.S. financial markets. ADRs enable investors to buy
-              foreign companies on United State exchanges (NYSE, NASDAQ) and in
-              US dollars while paying the same fees as other US listed
-              securities. Additionally, companies that list ADRs are subject to
-              the same compliance and laws as other US companies. ADRs do
-              contain risk and can be extremely volatile.
+              ADR, or American Depositary Receipt, is a financial instrument
+              that represents ownership in shares of a non-U.S. company and
+              trades on U.S. financial markets. ADRs enable investors to buy
+              shares of foreign companies on U.S. exchanges, such as the NYSE or
+              NASDAQ, and in U.S. dollars. These transactions incur the same
+              fees as trading in U.S.-listed securities. Additionally, companies
+              listing ADRs are subject to the same regulations and laws as
+              domestic U.S. companies. However, it’s important to note that ADRs
+              can be risky and may exhibit high volatility.
             </p>
           </Modal.Body>
         </Modal>
