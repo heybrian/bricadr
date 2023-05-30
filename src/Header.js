@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import EmailLink from './EmailLink';
+import InfoOverlay from './InfoOverlay';
 
 const Header = () => (
   <header> 
@@ -12,8 +13,8 @@ const Header = () => (
       <Link to="/russia">Russia</Link>{/* |&nbsp;
       <Link to="#">More countries...</Link>*/}
       <span style={{float: 'right'}}>
-        <Link className="bricBox" to="#bric_box">What&rsquo;s a BRIC?</Link> |&nbsp;
-        <Link className="bricBox" to="#bric_box">What&rsquo;s an ADR?</Link> |&nbsp;
+        <InfoOverlay linkText="What&rsquo;s a BRIC?" /> |&nbsp;
+        <InfoOverlay linkText="What&rsquo;s an ADR?" /> |&nbsp;
         <EmailLink />
       </span>
     </p>
