@@ -41,6 +41,9 @@ const Footer = () => (
       any of the securities discussed. Information expressed on this date is
       subject to change without notice.
     </h6>
+    <h6>
+      &copy; {(new Date().getFullYear())} Bricadr. All rights reserved.
+    </h6>
   </footer>
 );
 

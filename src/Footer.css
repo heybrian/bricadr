@@ -1,8 +1,14 @@
 footer {
     display: block;
-    width: 980px;
+    max-width: 980px;
     margin: 0 auto;
     padding: 20px 0; 
   }
 
   h6 { font-size: 10px; }
+
+  @media screen and (max-device-width: 575px) and (orientation: portrait) {
+    footer {
+       padding: 3% 5%; 
+    }
+  }

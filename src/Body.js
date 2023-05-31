@@ -8,7 +8,7 @@ const Body = ({ stocks, country }) => {
   const numberOfStocks = stocks.length;
 
   return (
-    <div>
+    <main>
       <h1>
         <strong>{country}:</strong> Sortable list of all stocks and funds
       </h1>
@@ -32,7 +32,7 @@ const Body = ({ stocks, country }) => {
       </div>
       <StockTable stocks={stocks} />
       <div className="column span-3 last">{/*<p className='ad'>Ad</p>*/}</div>
-    </div>
+    </main>
   );
 };
 

@@ -4,13 +4,20 @@ h4 { font: 14px "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
 h1, h4 {
     display: block;
-    width: 980px;
+    max-width: 980px;
     margin: 0 auto;
   }
   
   p, h2 {
     text-align: left;
+    clear: left; 
   }
 
   a { color: #06c; }
   .ad { padding: 30px 0; text-align: center; }
+
+  @media screen and (max-device-width: 575px) and (orientation: portrait) {
+    body { background: none; }
+    h1 { padding: 15px 5%; }
+    h4 { margin-bottom: -10px; padding: 0 5%; }
+  }

@@ -67,31 +67,31 @@ class StockTable extends React.Component {
     return (
       <div className='container stock-table'>
         <div className='row bg-primary text-white'>
-          <div className='col-3 col-sm-2' onClick={() => this.sort('name')}>
+          <div className='col-3 col-sm-2 text-nowrap' onClick={() => this.sort('name')}>
             {'ADR Name '}
             {this.state.sortColumn === 'name' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
           </div>
-          <div className='col-3 col-sm-1' onClick={() => this.sort('ticker')}>
+          <div className='col-3 col-sm-1 text-nowrap' onClick={() => this.sort('ticker')}>
             {'Ticker '}
             {this.state.sortColumn === 'ticker' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
           </div>
-          <div className='col-2 col-sm-1' onClick={() => this.sort('price')}>
+          <div className='col-2 col-sm-1 text-nowrap' onClick={() => this.sort('price')}>
             {'Price '}
             {this.state.sortColumn === 'price' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
           </div>
-          <div className='col-2 col-sm-1' onClick={() => this.sort('change')}>
+          <div className='col-2 col-sm-1 text-nowrap' onClick={() => this.sort('change')}>
             {'Change '}
             {this.state.sortColumn === 'change' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
           </div>
-          <div className='col-2 col-sm-1' onClick={() => this.sort('changePercent')}>
-      {'% '}
+          <div className='col-2 col-sm-1 text-nowrap' onClick={() => this.sort('changePercent')}>
+      {'\u00A0\u00A0\u00A0\u00A0\u00A0% '}
       {this.state.sortColumn === 'changePercent' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
     </div>
-    <div className='d-none d-sm-block col-sm-1' onClick={() => this.sort('marcap')}>
+    <div className='d-none d-sm-block col-sm-1 text-nowrap' onClick={() => this.sort('marcap')}>
       {'MarCap '}
       {this.state.sortColumn === 'marcap' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
     </div>
-    <div className='d-none d-sm-block col-sm-1' onClick={() => this.sort('yield')}>
+    <div className='d-none d-sm-block col-sm-1 text-nowrap' onClick={() => this.sort('yield')}>
       {'Yield '}
       {this.state.sortColumn === 'yield' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
     </div>

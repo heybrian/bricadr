@@ -1,9 +1,18 @@
 header {
     display: block;
-    width: 980px;
+    max-width: 980px;
     margin: 0 auto;
   }
+
+  .info { float: right; }
+
   
   p { font-size: 13px; text-align: left; }
   h2 { font-size: 25px; }
+
+  @media screen and (max-device-width: 575px) and (orientation: portrait) {
+    header { padding: 3% 5%; }
+    .info { float: left; }
+    h2 { display: none; }
+  }
   

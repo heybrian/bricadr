@@ -12,7 +12,7 @@ const Header = () => (
       <Link to="/brazil">Brazil</Link> |&nbsp;
       <Link to="/russia">Russia</Link>{/* |&nbsp;
       <Link to="#">More countries...</Link>*/}
-      <span style={{float: 'right'}}>
+      <span class="info">
         <InfoOverlay linkText="What&rsquo;s a BRIC?" /> |&nbsp;
         <InfoOverlay linkText="What&rsquo;s an ADR?" /> |&nbsp;
         <EmailLink />
