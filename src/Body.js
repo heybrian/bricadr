@@ -19,7 +19,7 @@ const Body = ({ stocks, country }) => {
         Found a new ADR?{" "}
         <span
           onClick={() => setShowAddStock(true)}
-          style={{ color: "blue", cursor: "pointer" }}
+          style={{ color: "#06c", textDecorationLine: "underline", cursor: "pointer" }}
         >
           Add it here
         </span>

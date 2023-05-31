@@ -61,65 +61,60 @@ class StockTable extends React.Component {
       return 0;
     });
     this.setState({stocks, sortColumn: column, sortAscending});
-  }
-  
-  
-  
-  
+  }  
 
   render() {
     return (
       <div className='container stock-table'>
         <div className='row bg-primary text-white'>
-          <div className='col-2' onClick={() => this.sort('name')}>
+          <div className='col-3 col-sm-2' onClick={() => this.sort('name')}>
             {'ADR Name '}
             {this.state.sortColumn === 'name' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
           </div>
-          <div className='col-1' onClick={() => this.sort('ticker')}>
+          <div className='col-3 col-sm-1' onClick={() => this.sort('ticker')}>
             {'Ticker '}
             {this.state.sortColumn === 'ticker' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
           </div>
-          <div className='col-1' onClick={() => this.sort('price')}>
+          <div className='col-2 col-sm-1' onClick={() => this.sort('price')}>
             {'Price '}
             {this.state.sortColumn === 'price' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
           </div>
-          <div className='col-1' onClick={() => this.sort('change')}>
+          <div className='col-2 col-sm-1' onClick={() => this.sort('change')}>
             {'Change '}
             {this.state.sortColumn === 'change' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
           </div>
-          <div className='col-1' onClick={() => this.sort('changePercent')}>
-            {' % '}
-            {this.state.sortColumn === 'changePercent' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
-          </div>
-          <div className='col-1 d-none d-sm-block' onClick={() => this.sort('marcap')}>
-            {'MarCap '}
-            {this.state.sortColumn === 'marcap' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
-          </div>
-          <div className='col-1 d-none d-sm-block' onClick={() => this.sort('yield')}>
-            {'Yield '}
-            {this.state.sortColumn === 'yield' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
-          </div>
-          <div className='col-2 d-none d-sm-block' onClick={() => this.sort('sector')}>
-            {'Sector '}
-            {this.state.sortColumn === 'sector' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
-          </div>
-          <div className='col-2 d-none d-sm-block' onClick={() => this.sort('industry')}>
-            {'Industry '}
-            {this.state.sortColumn === 'industry' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
-          </div>
+          <div className='col-2 col-sm-1' onClick={() => this.sort('changePercent')}>
+      {'% '}
+      {this.state.sortColumn === 'changePercent' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
+    </div>
+    <div className='d-none d-sm-block col-sm-1' onClick={() => this.sort('marcap')}>
+      {'MarCap '}
+      {this.state.sortColumn === 'marcap' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
+    </div>
+    <div className='d-none d-sm-block col-sm-1' onClick={() => this.sort('yield')}>
+      {'Yield '}
+      {this.state.sortColumn === 'yield' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
+    </div>
+    <div className='d-none d-sm-block col-sm-2' onClick={() => this.sort('sector')}>
+      {'Sector '}
+      {this.state.sortColumn === 'sector' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
+    </div>
+    <div className='d-none d-sm-block col-sm-2' onClick={() => this.sort('industry')}>
+      {'Industry '}
+      {this.state.sortColumn === 'industry' ? (this.state.sortAscending ? '\u2191' : '\u2193') : ''}
+    </div>
         </div>
         {this.state.stocks.map(stock => (
           <div className='row border' key={stock.ticker}>
-            <div className='col-2'><a href={stock.website} target="_blank" rel="noreferrer">{stock.name}</a></div>
-            <div className='col-1'><a href={stock.tickerUrl} target="_blank" rel="noreferrer">{stock.ticker}</a></div>
-            <div className='col-1'>{stock.price}</div>
-            <div className='col-1' style={{ color: stock.change < 0 ? '#b22222' : 'green' }}>{stock.change}</div>
-            <div className='col-1' style={{ color: stock.changePercent.startsWith('-') ? '#b22222' : 'green' }}>{stock.changePercent}</div>
-            {/*<div className='col-1 d-none d-sm-block'>{stock.pe}</div>*/}
-            <div className='col-1 d-none d-sm-block'>{stock.marcap}</div>
-            <div className='col-1 d-none d-sm-block'>{stock.yield}</div>
-            <div className='col-2 d-none d-sm-block'>{stock.sector}</div>
-            <div className='col-2 d-none d-sm-block'>{stock.industry}</div>
+            <div className='col-3 col-sm-2'><a href={stock.website} target="_blank" rel="noreferrer">{stock.name}</a></div>
+            <div className='col-3 col-sm-1'><a href={stock.tickerUrl} target="_blank" rel="noreferrer">{stock.ticker}</a></div>
+            <div className='col-2 col-sm-1'>{stock.price}</div>
+            <div className='col-2 col-sm-1' style={{ color: stock.change < 0 ? '#b22222' : 'green' }}>{stock.change}</div>
+            <div className='col-2 col-sm-1' style={{ color: stock.changePercent.startsWith('-') ? '#b22222' : 'green' }}>{stock.changePercent}</div>
+      <div className='d-none d-sm-block col-sm-1'>{stock.marcap}</div>
+      <div className='d-none d-sm-block col-sm-1'>{stock.yield}</div>
+      <div className='d-none d-sm-block col-sm-2'>{stock.sector}</div>
+      <div className='d-none d-sm-block col-sm-2'>{stock.industry}</div>
           </div>
         ))}
       </div>

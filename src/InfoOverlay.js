@@ -34,8 +34,8 @@ class InfoOverlay extends React.Component {
           </Modal.Header>
           <Modal.Body>
             <p>
-              The acronym BRIC, often rendered as "the BRICs" or "the BRIC
-              countries" or referred to as the "Big Four," represents a group of
+              The acronym BRIC, often rendered as “the BRICs” or “the BRIC
+              countries” or referred to as the “Big Four,” represents a group of
               countries consisting of Brazil, Russia, India, and China. These
               nations are considered to be at a comparable stage of newly
               advanced economic development. Collectively, they account for more
@@ -46,7 +46,7 @@ class InfoOverlay extends React.Component {
             </p>
             <p>
               This acronym was first coined by Jim O’Neill from Goldman Sachs in
-              his 2001 paper titled "The World Needs Better Economic BRICs.”
+              his 2001 paper titled “The World Needs Better Economic BRICs.”
             </p>
           </Modal.Body>
           <Modal.Header>
