@@ -43,6 +43,7 @@ const Footer = () => (
     </h6>
     <h6>
       &copy; {(new Date().getFullYear())} Bricadr. All rights reserved.
+      <span class="version">v.8.88</span>
     </h6>
   </footer>
 );

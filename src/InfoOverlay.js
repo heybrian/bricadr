@@ -49,7 +49,7 @@ class InfoOverlay extends React.Component {
               his 2001 paper titled “The World Needs Better Economic BRICs.”
             </p>
           </Modal.Body>
-          <Modal.Header>
+          <Modal.Header closeButton>
             <Modal.Title>What’s an ADR?</Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -65,6 +65,7 @@ class InfoOverlay extends React.Component {
               can be risky and may exhibit high volatility.
             </p>
           </Modal.Body>
+         
         </Modal>
       </>
     );

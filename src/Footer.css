@@ -1,9 +1,6 @@
 footer {
-    display: block;
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 20px 0; 
-  }
+    display: block; max-width: 980px; margin: 0 auto; padding: 20px 0; }
+    .version { float: right; }
 
   h6 { font-size: 10px; }
 
