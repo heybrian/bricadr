@@ -3,7 +3,14 @@
     background-color: #f0f9ff !important;
     color: #2281CF !important;
     border-top: #82cffa !important;
+    cursor: pointer;
 }
+
+.sortable-column-text { margin-right: 5px; }
+.sortable-column:hover .sortable-column-text {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 
 .row.border:nth-child(even) {
     background-color: white;
@@ -18,4 +25,4 @@
     padding-bottom: 8px;
 }
 
-.stock-table { font-size: 13px; }
+.stock-table { font-size: 13px; } 
