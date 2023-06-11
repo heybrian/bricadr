@@ -4,6 +4,9 @@ import "./Footer.css";
 const Footer = () => (
   <footer>
     <p>
+    <span>
+        <a href="#">Back to top &#94;</a>
+      </span>
       Financial Market Data powered by{" "}
       <a href="http://finance.yahoo.com/" target="_blank">
         Yahoo! Inc.
@@ -13,9 +16,7 @@ const Footer = () => (
     <p>
       NYSE/AMEX/NASDAQ/OTC/other data delayed by two hours or more. Click ticker
       symbols for more current quote prices.{" "}
-      <span>
-        <a href="#">Back to top &#94;</a>
-      </span>
+      
     </p>
 
     <h6>

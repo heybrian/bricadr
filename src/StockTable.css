@@ -6,7 +6,7 @@
     cursor: pointer;
 }
 
-.sortable-column-text { margin-right: 5px; }
+.sortable-column-text { margin-right: 2px; }
 .sortable-column:hover .sortable-column-text {
     text-decoration: underline;
     cursor: pointer;
